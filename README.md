@@ -1,1 +1,1 @@
-![Design preview for the Project tracking intro component ](./design/desktop-preview.jpg)
+![Design preview for the Project tracking intro component ](./img/design/desktop-preview.jpg)

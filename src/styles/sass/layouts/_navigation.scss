@@ -13,6 +13,8 @@
     padding: 2.4rem;
     border-radius: 0.3rem;
     transition: top 0.4s linear;
+    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.15);
+    z-index: -1;
 
     &--item {
       a {
