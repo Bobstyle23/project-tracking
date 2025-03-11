@@ -1,0 +1,9 @@
+.header {
+  @extend %flexbox;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 111rem;
+  margin-inline: auto;
+  padding: 3.8rem 3.2rem 0;
+  width: 100%;
+}
