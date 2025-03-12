@@ -80,3 +80,68 @@
     }
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: 40rem;
+    column-gap: 5.2rem;
+
+    &__header {
+      order: 0;
+      margin: 0;
+      padding-inline-end: 0;
+    }
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .hero {
+    &__title {
+      font-size: 5.2rem;
+    }
+
+    &__header {
+      padding-inline-start: 6.4rem;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    &__title {
+      font-size: 6.4rem;
+      margin-block-end: 1.2rem;
+    }
+
+    &__header {
+      padding: 0;
+      margin-inline-start: 16.5rem;
+      gap: 2rem;
+      align-self: start;
+      margin-block-start: 3.8rem;
+    }
+
+    &__description {
+      max-width: 27.5rem;
+      margin-block-end: calc(6.4rem - 2rem);
+    }
+
+    &__buttons {
+      gap: 2.4rem;
+
+      span {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    &__button {
+      width: 18.4rem;
+      height: 4.8rem;
+      font-size: 1.6rem;
+      letter-spacing: 0.107rem;
+    }
+  }
+}

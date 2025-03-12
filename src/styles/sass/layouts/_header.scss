@@ -6,11 +6,19 @@
   margin-inline: auto;
   padding: 3.8rem 3.2rem 0;
   margin-block-end: 6.4rem;
-}
 
-@include respond-to($breakpoint-desktops) {
-  .header {
+  @include respond-to($breakpoint-tablets) {
+    margin-block-end: 0;
+  }
+
+  @include respond-to($breakpoint-large-tablets) {
+    padding-inline: 6.4rem;
+    margin-block-end: 6.4rem;
+  }
+
+  @include respond-to($breakpoint-desktops) {
     padding-inline: 0;
     padding-block-start: 6.4rem;
+    margin-block-end: 12.4rem;
   }
 }
