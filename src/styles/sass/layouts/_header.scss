@@ -7,14 +7,9 @@
   padding: 3.8rem 3.2rem 0;
 }
 
-@include respond-to($breakpoint-tablets) {
-  .header {
-    padding: 6.4rem 3.2rem 0;
-  }
-}
-
 @include respond-to($breakpoint-desktops) {
   .header {
     padding-inline: 0;
+    padding-block-start: 6.4rem;
   }
 }
