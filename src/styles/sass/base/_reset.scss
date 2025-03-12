@@ -28,31 +28,31 @@ body {
   overflow: hidden;
   position: relative;
 
-  /* &::after { */
-  /*   content: ""; */
-  /*   position: absolute; */
-  /*   background-color: $color-light-gray; */
-  /*   width: 31.9rem; */
-  /*   height: 42.5rem; */
-  /*   right: -13.2rem; */
-  /*   top: 0; */
-  /*   border-bottom-left-radius: 6rem; */
-  /*   z-index: -1; */
-  /* } */
-  /**/
-  /* @include respond-to($breakpoint-tablets) { */
-  /*   &::after { */
-  /*     width: 35rem; */
-  /*     right: 0; */
-  /*   } */
-  /* } */
-  /**/
-  /* @include respond-to($breakpoint-desktops) { */
-  /*   &::after { */
-  /*     width: 70.5rem; */
-  /*     height: 42.7rem; */
-  /*   } */
-  /* } */
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-light-gray;
+    width: calc(31.9rem - 13.2rem);
+    height: 42.5rem;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 6rem;
+    z-index: -2;
+  }
+
+  @include respond-to($breakpoint-tablets) {
+    &::after {
+      width: 35rem;
+      right: 0;
+    }
+  }
+
+  @include respond-to($breakpoint-desktops) {
+    &::after {
+      width: 70.5rem;
+      height: 42.7rem;
+    }
+  }
 }
 
 h1,

@@ -6,8 +6,8 @@
     gap: 2.4rem;
     position: absolute;
     top: -100rem;
-    right: 0;
     background-color: #fff;
+    right: 0;
     width: 31.1rem;
     height: 23.3rem;
     padding: 2.4rem;
@@ -17,11 +17,17 @@
     z-index: -1;
 
     &--item {
-      a {
+      a:link,
+      a:visited {
         font-size: 1.8rem;
         letter-spacing: 0.12rem;
         text-transform: uppercase;
         color: $color-dark-blue;
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
       }
 
       &:last-of-type a {
@@ -34,6 +40,39 @@
       height: 1px;
       background-color: $color-dark-blue;
       opacity: 0.15;
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .navigation {
+    &__list {
+      position: static;
+      background: none;
+      width: auto;
+      height: auto;
+      box-shadow: none;
+      flex-flow: row wrap;
+      gap: 4rem;
+      padding: 0;
+
+      &--item {
+        a:link,
+        a:visited {
+          font-size: 1.5rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      &--dot {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+      }
+    }
+
+    &__button {
+      display: none;
     }
   }
 }
