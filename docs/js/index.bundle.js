@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".icon__hamburger"),t=document.querySelector(".icon__close"),c=document.querySelector(".navigation__list"),n=()=>{e.classList.toggle("hidden"),t.classList.toggle("hidden")},o=e=>{c.style.top=e};e.addEventListener("click",(()=>{n(),o("10rem")})),t.addEventListener("click",(()=>{n(),o("-100rem")}))})();
