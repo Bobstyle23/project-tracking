@@ -8,7 +8,7 @@
     top: -100rem;
     background-color: #fff;
     right: 0;
-    width: 31.1rem;
+    width: clamp(28rem, 80vw, 31.1rem);
     height: 23.3rem;
     padding: 2.4rem;
     border-radius: 0.3rem;

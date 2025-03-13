@@ -28,9 +28,10 @@
       background-color: $color-dark-blue;
       color: #fff;
       padding-inline: 1rem;
-      padding-block: 0.35rem;
+      padding-block: 0.4rem;
       border-radius: 1.25rem;
       margin-inline-end: 1.6rem;
+      height: 2.5rem;
     }
   }
 
@@ -117,10 +118,11 @@
 
     &__header {
       padding: 0;
-      margin-inline-start: 16.5rem;
+      margin-inline-start: auto;
       gap: 2rem;
       align-self: start;
       margin-block-start: 3.8rem;
+      width: 53rem;
     }
 
     &__description {
